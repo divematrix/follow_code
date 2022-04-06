@@ -9,13 +9,13 @@ public class SupplierEx {
 		Supplier<String> s1 = () -> {
 			return "홍길동";
 		};
-        System.out.println(s1.get());
+		System.out.println(s1.get());
 
 		s1 = () -> "이순신";
 		System.out.println(s1.get());
 
 		IntSupplier s2 = () -> {
-			int num = (int)(Math.random() * 6) + 1;
+			int num = (int) (Math.random() * 6) + 1;
 			return num;
 		};
 		System.out.println("주사위 : " + s2.getAsInt());

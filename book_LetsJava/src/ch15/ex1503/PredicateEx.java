@@ -3,7 +3,7 @@ package ch15.ex1503;
 import java.util.function.Predicate;
 
 public class PredicateEx {
-	
+
 	static Student[] list = {
 			new Student("홍길동", 90, 80, "컴공"),
 			new Student("이순신", 95, 70, "통계"),
@@ -21,30 +21,30 @@ public class PredicateEx {
 		System.out.println("컴공과 평균 수학 점수 : " + avg2);
 	}
 
-	private static double avgEng (Predicate<Student> predicate){
+	private static double avgEng(Predicate<Student> predicate) {
 		int count = 0;
 		int sum = 0;
 		for (Student student : list) {
 			// equals 비교
-			if (predicate.test(student)){
+			if (predicate.test(student)) {
 				count++;
 				sum += student.getEng();
 			}
 		}
-		return (double)sum/count;
+		return (double) sum / count;
 	}
 
-	private static double avgMath(Predicate<Student> predicate){
+	private static double avgMath(Predicate<Student> predicate) {
 		int count = 0;
 		int sum = 0;
 		for (Student student : list) {
 			// equals 비교
-			if (predicate.test(student)){
+			if (predicate.test(student)) {
 				count++;
 				sum += student.getMath();
 			}
 		}
-		return (double)sum/count;
+		return (double) sum / count;
 	}
 }
 
