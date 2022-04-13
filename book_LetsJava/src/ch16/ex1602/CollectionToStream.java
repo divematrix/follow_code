@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.stream.Stream;
 
 public class CollectionToStream {
-	public static void main(String[] args) {
+	public static void main (String[] args) {
 
 		// 문자열 배열을 컬렉션 프레임워크 List로 변환
 		List<String> list = Arrays.asList("a", "b", "c", "d", "e");
@@ -15,6 +15,8 @@ public class CollectionToStream {
 
 		// 내부반복자를 이용해 출력
 		stream.forEach(s -> System.out.println(s));
+
+		// stream.forEach(System.out::println);
 	}
 }
 

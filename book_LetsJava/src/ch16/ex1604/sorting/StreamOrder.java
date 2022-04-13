@@ -1,4 +1,4 @@
-package ch16.ex1604;
+package ch16.ex1604.sorting;
 
 import java.util.Arrays;
 import java.util.Comparator;
